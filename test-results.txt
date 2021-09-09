@@ -1,0 +1,54 @@
+> node --version = v14.17.3
+> antlr4@4.9.2 build-prod
+
+
+> npx webpack --mode production ; 1:1 webpack v4 - v5
+
+asset antlr4.js 174 KiB [emitted] [minimized] (name: main) 1 related asset
+modules by path ./src/antlr4/*.js 173 KiB 17 modules
+modules by path ./src/antlr4/atn/*.js 265 KiB 16 modules
+modules by path ./src/antlr4/error/*.js 63.2 KiB 5 modules
+modules by path ./src/antlr4/dfa/*.js 19.3 KiB 4 modules
+modules by path ./src/antlr4/tree/*.js 16.7 KiB
+  ./src/antlr4/tree/index.js 1.4 KiB [built] [code generated]
+  ./src/antlr4/tree/Tree.js 11.3 KiB [built] [code generated]
+  ./src/antlr4/tree/Trees.js 3.99 KiB [built] [code generated]
+modules by path ./src/antlr4/polyfills/*.js 3.91 KiB
+  ./src/antlr4/polyfills/codepointat.js 1.8 KiB [built] [code generated]
+  ./src/antlr4/polyfills/fromcodepoint.js 2.11 KiB [built] [code generated]
+fs (ignored) 15 bytes [built] [code generated]
+webpack 5.52.0 compiled successfully in 4616 ms
+
+> npx webpack --mode production ; changed config
+
+asset antlr4.js 174 KiB [compared for emit] [minimized] (name: main) 1 related asset
+modules by path ./src/antlr4/*.js 173 KiB 17 modules
+modules by path ./src/antlr4/atn/*.js 265 KiB 16 modules
+modules by path ./src/antlr4/error/*.js 63.2 KiB 5 modules
+modules by path ./src/antlr4/dfa/*.js 19.3 KiB 4 modules
+modules by path ./src/antlr4/tree/*.js 16.7 KiB
+  ./src/antlr4/tree/index.js 1.4 KiB [built] [code generated]
+  ./src/antlr4/tree/Tree.js 11.3 KiB [built] [code generated]
+  ./src/antlr4/tree/Trees.js 3.99 KiB [built] [code generated]
+modules by path ./src/antlr4/polyfills/*.js 3.91 KiB
+  ./src/antlr4/polyfills/codepointat.js 1.8 KiB [built] [code generated]
+  ./src/antlr4/polyfills/fromcodepoint.js 2.11 KiB [built] [code generated]
+fs (ignored) 15 bytes [built] [code generated]
+webpack 5.52.0 compiled successfully in 4360 ms
+
+> npx webpack --mode production ; target=browserslist
+
+asset antlr4.js 113 KiB [compared for emit] [minimized] (name: main) 1 related asset
+modules by path ./src/antlr4/*.js 118 KiB 17 modules
+modules by path ./src/antlr4/atn/*.js 203 KiB 16 modules
+modules by path ./src/antlr4/error/*.js 41.5 KiB 5 modules
+modules by path ./src/antlr4/dfa/*.js 12.8 KiB 4 modules
+modules by path ./src/antlr4/tree/*.js 8.89 KiB
+  ./src/antlr4/tree/index.js 303 bytes [built] [code generated]
+  ./src/antlr4/tree/Tree.js 4.8 KiB [built] [code generated]
+  ./src/antlr4/tree/Trees.js 3.8 KiB [built] [code generated]
+modules by path ./src/antlr4/polyfills/*.js 3.92 KiB
+  ./src/antlr4/polyfills/codepointat.js 1.8 KiB [built] [code generated]
+  ./src/antlr4/polyfills/fromcodepoint.js 2.12 KiB [built] [code generated]
+fs (ignored) 15 bytes [built] [code generated]
+webpack 5.52.0 compiled successfully in 2390 ms
